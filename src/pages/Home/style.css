@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    max-width: 1024px;
+    margin: auto;
+    background-color:rgba(240, 240, 240, 1);
+}
+
+.Section{
+    padding: 15px 32px 15px 32px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Section p{
+    font-weight: 500;
+    font-size:24px;
+    
+}
+
+.research-field {
+    background: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 4px;
+    background-image: url("Vector.png");
+    background-repeat: no-repeat;
+    background-position: 250px;
+    width: 282px;
+    height: 40px;
+    padding-left: 8px;
+  }
+  
