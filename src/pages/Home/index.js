@@ -17,16 +17,6 @@ function Home() {
   }, []);
   
 
-
-
-
-  const lowerEmployes = search.toLowerCase()
- 
- var filterEmployee = search.length > 0 ? employees?.filter(employee=>employee.name.toLowerCase().includes(lowerEmployes)):[];
-
-
-
-
   return (
     <div className="container">
       <AppBar />
@@ -41,7 +31,7 @@ function Home() {
    
        /> 
       </div>
-      <Table employees={employees} filterEmployee={filterEmployee} search={search} />
+      <Table employees={employees} search={search} />
      
     </div>
   );

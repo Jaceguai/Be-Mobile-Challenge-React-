@@ -2,10 +2,13 @@ import "./style.css";
  import EmployeesCard from "../EmployessCard";
 
 
-function Table({employees, filterEmployee, search,}) {
+function Table({employees,  search,}) {
  
 const dateFormat = employees?.admission_date
 const dataAdmissionFormat = new Intl.DateTimeFormat("pt-BR",{dateStyle:'short'}).format(dateFormat);
+const lowerEmployes = search.toLowerCase()
+ 
+ const filterEmployee = search.length > 0 ? employees?.filter(employee=>employee.name.toLowerCase().includes(lowerEmployes)):[];
 
 
 
