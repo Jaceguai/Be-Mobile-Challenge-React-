@@ -13,7 +13,7 @@ function Home() {
       .then((response) => response.json())
       .then((data) => {
      setEmployess(data)
-      });
+      }).catch(error => alert("Error 404"))
   }, []);
   
 

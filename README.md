@@ -34,10 +34,10 @@ Para iniciá-lo, siga os passos abaixo:
 $ npm install
 
 # Iniciar o json-server
-$ json-server --watch db.json
+$ yarn server
 
 # Iniciar o projeto
-$ npm start
+$ yarn dev
 ```
 
 O app estará disponível no seu browser pelo endereço http://localhost:3001 e a api pelo endereço http://localhost:3000.
